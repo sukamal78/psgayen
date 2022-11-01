@@ -81,7 +81,7 @@ export default function Home() {
         
         {
           books.map((book)=>
-            <div className=' m-5 max-w-sx rounded overflow-hidden shadow-lg'>
+            <div className=' m-5 max-w-sx rounded overflow-hidden shadow-lg' key={book.id}>
             <img className='w-full' src={book.path}  />
             <div className='py-3 flex justify-center'>
               <button className='px-5 py-2 text-white rounded-2xl bg-cyan-500 hover:bg-cyan-700 '>View Details</button>
